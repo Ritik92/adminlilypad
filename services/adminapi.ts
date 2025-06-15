@@ -1,7 +1,7 @@
 // services/adminApi.ts
 import axios from 'axios'
 
-const API_BASE = 'http://65.2.11.168:8081/api/v1'
+const API_BASE = 'https://backend-api.lilypad.co.in/api/v1'
 
 // Create axios instance with default config
 const adminApi = axios.create({
