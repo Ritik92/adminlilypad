@@ -13,9 +13,9 @@ export function middleware(request: NextRequest) {
       return NextResponse.redirect(new URL('/admin/login', request.url))
     }
     
-    // If has token and on login page, redirect to dashboard
+    // If has token and on login page, redirect to bookings
     if (adminToken && request.nextUrl.pathname.includes('/admin/login')) {
-      return NextResponse.redirect(new URL('/admin/dashboard', request.url))
+      return NextResponse.redirect(new URL('/admin/bookings', request.url))
     }
   }
   
